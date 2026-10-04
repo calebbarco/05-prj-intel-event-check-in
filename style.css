@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -346,6 +347,70 @@ select {
   font-size: 15px;
   font-weight: 500;
   color: #475569;
+}
+
+.attendee-list-section {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.attendee-list-section h4 {
+  margin-bottom: 10px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.attendee-list {
+  max-height: 280px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e2e8f0;
+  list-style: none;
+}
+
+.attendee-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.attendee-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #334155;
+  font-weight: 600;
+}
+
+.attendee-team {
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.attendee-team.water {
+  background-color: #e8f7fc;
+  color: #006895;
+}
+
+.attendee-team.zero {
+  background-color: #ecfdf3;
+  color: #21734a;
+}
+
+.attendee-team.power {
+  background-color: #fff7ed;
+  color: #9a4d08;
+}
+
+.attendee-empty {
+  padding: 12px 8px;
+  color: #64748b;
+  font-size: 14px;
 }
 
 /* Mobile responsive */
