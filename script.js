@@ -3,6 +3,7 @@ const form = document.getElementById("checkInForm");
 const nameInput = document.getElementById("attendeeName");
 const teamSelect = document.getElementById("teamSelect");
 const progressBar = document.getElementById("progressBar");
+const attendeeCount = document.getElementById("attendeeCount");
 
 // Tracking the attendance
 let count = 0;
@@ -21,6 +22,7 @@ form.addEventListener("submit", function (e) {
 
   // Incrementing the count
   count++;
+  attendeeCount.textContent = count;
   console.log("Total check-ins: ", count);
 
   // Updating the progress bar
