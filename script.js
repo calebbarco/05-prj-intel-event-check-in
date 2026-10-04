@@ -4,6 +4,7 @@ const nameInput = document.getElementById("attendeeName");
 const teamSelect = document.getElementById("teamSelect");
 const progressBar = document.getElementById("progressBar");
 const attendeeCount = document.getElementById("attendeeCount");
+const greeting = document.getElementById("greeting");
 
 // Tracking the attendance
 let count = 0;
@@ -36,6 +37,9 @@ form.addEventListener("submit", function (e) {
 
   // Showing a simple welcome message
   const message = `Welcome ${name} from ${teamName}`;
+  greeting.textContent = message;
+  greeting.classList.add("success-message");
+  greeting.style.display = "block";
   console.log(message);
 
   form.reset();
